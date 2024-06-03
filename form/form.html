@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic Form</title>
+    </head>
+    <body>
+        <form action"_blank" method="POST">
+            <label for="UserName">UserName:</label>
+            <input type="text" placeholder="User Name" id="UserName" minlength="5" required><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" minlength="6" maxlength="20" required><br>
+
+            <label for="bday">Birth Date:</label>
+            <input type="date" id="bday"required><br>
+
+            <label for="Phone">Phone:</label>
+            <input type="tel" id="Phone" placeholder="01234-5678911" pattern="[0-9]{5}-[0-9]{6}" required><br>
+
+            <label for="Gender">Gender:</label>
+            <label for="Male" value="Male">Male</label>
+            <input id="Male" type="radio"  name="Gender">
+            <label for="Female">Female</label>
+            <input type="radio" id="Female" name="Gender"><br>
+
+            <label for="number">Quantity:</label>
+            <input type="number" id="number" min="0" max="99" value="1"><br>
+
+            <label for="payment">Payment:</label>
+            <select id="payment">
+                <option>VISA</option>
+                <option>BKASH</option>
+                <option>ROCKET</option>
+            </select><br>
+            
+            <label for="t&c">Terms & Conditions:</label>
+            <input type="checkbox" id="t&c" required><br>
+
+            <label for="Comment">Comment:</label>
+            <textarea id="Comment" rows="3" colss="20"></textarea><br>
+            <label for="file">File:</label>
+            <input type="file" id="file" accept="image/jpeg"><br>
+            <input type="submit">
+        </form>
+    </body>
+</html>
